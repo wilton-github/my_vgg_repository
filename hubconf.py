@@ -20,6 +20,7 @@ class LeNet5(nn.Module):
         return x
 
 def lenet5(pretrained=False,**kwargs):
+    print('def lenet5 ...................')
     lenet=LeNet5()
     if pretrained:
         lenet.load_state_dict(torch.load("./lenet5_model.pt"))
