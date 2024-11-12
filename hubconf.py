@@ -26,7 +26,7 @@ def lenet5(pretrained=False,**kwargs):
     return lenet
 
 def load_model(model_name,pretrained=False,**kwargs):
-    if model_name=="Lenet5":
+    if model_name=="LeNet5":
         return lenet5(pretrained=pretrained,**kwargs)
     elif model_name=="vgg16":
         raise ValueError("Can't find vgg16")
